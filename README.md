@@ -16,10 +16,10 @@ import a from 'url-var';
 
 //address: http://example.something/?a=10&b=20
 a.url('a'); // = 10
-a.url('b'); // = 20
+a.url('a','b'); // = {a:10,b:20}
 
 //address: whatever
 a.str('http://example.something/?a=10&b=20','a') // = 10
-a.str('http://example.something/?a=10&b=20','b') // = 20
+a.str('http://example.something/?a=10&b=20','a','b') // = {a:10,b:20}
 
 ```
